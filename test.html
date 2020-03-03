@@ -5,6 +5,7 @@
     <title>Testing jotted in Canvas</title>
     <script src="https://cdn.jsdelivr.net/npm/jotted@1.5.2/jotted.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jotted@1.5.2/jotted.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.7/ace.js"></script>
 </head>
 
 <body>
@@ -17,13 +18,7 @@
             }],
             pane: 'html',
             plugins: [
-                'stylus',
-                {
-                    name: 'codemirror',
-                    options: {
-                        lineNumbers: false
-                    }
-                }
+                'ace'
             ]
         });
     </script>
